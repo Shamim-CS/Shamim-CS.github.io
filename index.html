@@ -3,359 +3,390 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Md Shamimul Islam – Graduate Research Assistant, Florida Polytechnic University. Research in NIDS, LLMs, RAG, and IoT Security.">
-  <title>Md Shamimul Islam</title>
+  <title>Md Shamimul Islam | AI for Cybersecurity, Computer Vision, LLMs and Agentic AI</title>
+  <meta name="description" content="Md Shamimul Islam works on AI for cybersecurity, computer vision, and LLM agents, building systems that are accurate, explainable, and practical to deploy. M.S. student and Graduate Research Assistant at Florida Polytechnic University.">
+  <meta property="og:title" content="Md Shamimul Islam">
+  <meta property="og:description" content="AI for cybersecurity, computer vision, and LLM agents. M.S. student and Graduate Research Assistant, Florida Polytechnic University.">
+  <meta property="og:image" content="https://shamim-cs.github.io/img/profile_pic.jpg">
+  <link rel="icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<!-- ── Navigation ─────────────────────────────────────── -->
-<nav class="site-nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Md Shamimul Islam</a>
-    <div class="nav-links">
-      <a href="index.html" class="active">Home</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="nav-name" href="index.html">Md Shamimul Islam</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#research">Research</a>
       <a href="publications.html">Publications</a>
       <a href="#projects">Projects</a>
-      <a href="documents/curriculum vitae.pdf" target="_blank">CV</a>
-    </div>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+      <a href="#experience">Experience</a>
+      <a href="documents/CV_Md_Shamimul_Islam.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch to dark mode">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
   </div>
-</nav>
+</header>
 
-<main>
+<main id="main">
 
-  <!-- ── Profile hero ───────────────────────────────── -->
-  <section class="profile">
-    <img src="img/profile_pic.jpg" alt="Md Shamimul Islam" class="profile-photo">
-    <div class="profile-info">
-      <h1>Md Shamimul Islam</h1>
-      <p class="profile-role">Graduate Research Assistant &amp; M.S. Student</p>
-      <p class="profile-dept">Department of Computer Science &nbsp;·&nbsp; Florida Polytechnic University</p>
-      <div class="profile-links">
-        <a href="https://scholar.google.com/citations?hl=en&authuser=2&user=7qdN4ZYAAAAJ" target="_blank" class="plink">Google Scholar</a>
-        <a href="https://linkedin.com/in/shamim435" target="_blank" class="plink">LinkedIn</a>
-        <a href="https://github.com/Shamim-38" target="_blank" class="plink">GitHub</a>
-        <a href="https://orcid.org/0009-0000-1848-1760" target="_blank" class="plink">ORCID</a>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="hero-id">
+          <img class="hero-photo" src="img/profile_pic.jpg" alt="Portrait of Md Shamimul Islam">
+          <p class="hero-role">M.S. student and Graduate Research Assistant<br>
+            Computer Science, <a href="https://floridapoly.edu/" target="_blank" rel="noopener">Florida Polytechnic University</a></p>
+        </div>
+        <h1>Md Shamimul Islam</h1>
+        <p class="hero-lede">I work on AI for cybersecurity, computer vision, and LLM agents, building systems that are accurate, explainable, and practical to deploy.</p>
+        <p class="hero-intro">My thesis develops multi-agent LLM frameworks that detect network attacks and learn new rules from their own errors. I also fine-tune large and small language models for malware and intrusion detection, and build vision models for video-based safety monitoring and brain tumor segmentation.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:mislam3051@floridapoly.edu">Email me</a>
+          <a class="btn" href="documents/CV_Md_Shamimul_Islam.pdf" target="_blank" rel="noopener">CV</a>
+          <a class="btn" href="https://scholar.google.com/citations?user=7qdN4ZYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="btn" href="https://github.com/shamim-cs" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <p class="hero-note"><strong>Looking for Ph.D. positions starting Fall 2027 in AI for cybersecurity, computer vision, or LLMs and agentic AI.</strong> M.S. expected May 2027, advised by Dr. Ayesha S. Dina and Dr. Luis G. Jaimes.</p>
       </div>
-      <p class="profile-email">
-        <a href="mailto:mislam3051@floridapoly.edu">mislam3051@floridapoly.edu</a>
-      </p>
+
+      <figure class="panel" id="panel" aria-label="Examples from three research areas">
+        <div class="panel-tabs" role="tablist" aria-label="Research areas">
+          <button role="tab" id="tab-sec" aria-controls="pane-sec" aria-selected="true" data-cap="A simplified view of how MA-IDS learns from its errors.">Security + agents</button>
+          <button role="tab" id="tab-vid" aria-controls="pane-vid" aria-selected="false" tabindex="-1" data-cap="Test accuracy on the extended SHV dataset, IEEE COMPAS 2026.">Video</button>
+          <button role="tab" id="tab-med" aria-controls="pane-med" aria-selected="false" tabindex="-1" data-cap="A real BaT-SAM prediction on a BRISC2025 test slice, IEEE WIECON-ECE 2026.">Medical imaging</button>
+        </div>
+
+        <div class="pane" id="pane-sec" role="tabpanel" aria-labelledby="tab-sec">
+          <div class="panel-head"><b>MA-IDS</b><span>experience library: <span class="lib-count" data-from="9,497" data-to="9,498" data-at="3300">9,498</span> rules</span></div>
+          <div class="panel-body">
+            <div class="step" data-at="300"><span class="who">flow 4127</span>&nbsp; TCP to port 80, 412 pkts, avg IAT 0.3 ms</div>
+            <div class="step" data-at="1300">classifier: Benign &nbsp;<span class="who">true label:</span> DDoS &nbsp;<span class="verdict-bad">✗ wrong</span></div>
+            <div class="step" data-at="2400"><span class="who">error analysis agent writes a rule</span>
+              <div class="rule">Mistaken for Benign due to a normal port and byte count, but DDoS because packets arrive extremely fast. RULE: if avg IAT &lt; 1 ms with many packets to one port, classify as DDoS.</div>
+            </div>
+            <div class="step" data-at="4600"><span class="who">flow 4128</span>&nbsp; TCP to port 80, 398 pkts, avg IAT 0.2 ms</div>
+            <div class="step" data-at="5700"><span class="who">retrieved 1 rule</span> &nbsp;classifier: DDoS &nbsp;<span class="verdict-good">✓ correct</span></div>
+          </div>
+        </div>
+
+        <div class="pane" id="pane-vid" role="tabpanel" aria-labelledby="tab-vid" hidden>
+          <div class="panel-head"><b>Video transformers</b><span>SHV test set, 181 clips</span></div>
+          <div class="panel-body">
+            <div class="step" data-at="200"><span class="who">clip sampled to 8 frames for TimeSformer</span></div>
+            <div class="frames step" data-at="500" aria-hidden="true">
+              <span>f1</span><span>f2</span><span>f3</span><span>f4</span><span>f5</span><span>f6</span><span>f7</span><span>f8</span>
+            </div>
+            <div class="step" data-at="2300"><span class="who">attention across space and time, then a</span> label</div>
+            <div class="bars step" data-at="3100">
+              <div class="bar"><span class="bar-name">TimeSformer</span><span class="bar-track"><span class="bar-fill" style="--v:92.27%"></span></span><span class="bar-val">92.27%</span></div>
+              <div class="bar"><span class="bar-name">VideoMAE</span><span class="bar-track"><span class="bar-fill" style="--v:91.71%"></span></span><span class="bar-val">91.71%</span></div>
+              <div class="bar"><span class="bar-name">ViViT</span><span class="bar-track"><span class="bar-fill" style="--v:91.16%"></span></span><span class="bar-val">91.16%</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pane" id="pane-med" role="tabpanel" aria-labelledby="tab-med" hidden>
+          <div class="panel-head"><b>BaT-SAM</b><span>meningioma, axial MRI</span></div>
+          <div class="panel-body med">
+            <div class="scan">
+              <img src="img/research/mri-input.webp" alt="Axial MRI slice with a meningioma" width="360" height="345">
+              <span class="tbox step" data-at="1500"></span>
+              <img class="mask step" data-at="2700" src="img/research/mri-overlay.webp" alt="" width="360" height="345">
+            </div>
+            <div class="med-steps">
+              <div class="step" data-at="300"><span class="who">frozen SAM encoder</span><br>+ Conv-LoRA experts, under 1% of weights trained</div>
+              <div class="step" data-at="1500"><span class="who">self-prompting box</span><br>finds the tumor, no user click</div>
+              <div class="step" data-at="2700"><span class="who">predicted mask</span></div>
+              <div class="step" data-at="3600">vs. ground truth<br><span class="verdict-good">IoU 0.954, Dice 0.976</span></div>
+            </div>
+          </div>
+        </div>
+
+        <figcaption class="panel-foot">
+          <span id="paneCap">A simplified view of how MA-IDS learns from its errors.</span>
+          <button class="replay" id="replay" type="button">Replay</button>
+        </figcaption>
+      </figure>
     </div>
   </section>
 
-  <hr class="divider">
-
-  <!-- ── Short Bio ──────────────────────────────────── -->
-  <section class="block">
-    <h2 class="section-title">Short Bio</h2>
-    <div class="bio-text">
-      <p>
-        I am a Graduate Research Assistant and M.S. student in the
-        <a href="https://floridapoly.edu/academics/programs/computer-science/" target="_blank">Department of Computer Science</a>
-        at <a href="https://floridapoly.edu/" target="_blank">Florida Polytechnic University</a>,
-        advised by Dr. Ayesha S. Dina and Dr. Luis G. Jaimes. My thesis, <strong>MA-IDS</strong>,
-        proposes a multi-agent RAG framework that integrates LLMs with a FAISS-based experience
-        library for adaptive, explainable IoT network intrusion detection. Before joining Florida Poly,
-        I lectured at Manarat International University and Asian University of Bangladesh, and hold
-        graduate degrees from Jahangirnagar University and Manarat International University.
-      </p>
+  <!-- News -->
+  <section class="section" id="news">
+    <div class="wrap">
+      <div class="section-head"><h2>News</h2></div>
+      <ul class="news">
+        <li><time>Oct 2026</time><span>Our paper on video transformers for sexual harassment detection (co-first author) is accepted at IEEE COMPAS 2026, University of Dhaka. <a href="https://arxiv.org/abs/2610.15354" target="_blank" rel="noopener">arXiv</a></span></li>
+        <li><time>Oct 2026</time><span>BaT-SAM, on brain tumor segmentation, is accepted at IEEE WIECON-ECE 2026.</span></li>
+        <li><time>Oct 2026</time><span>SERA-IDS, which brings experience retrieval to small language models, is submitted to IEEE ICC 2027.</span></li>
+        <li><time>Oct 2026</time><span>Code for MA-IDS is now public on <a href="https://github.com/shamim-cs/MA-IDS" target="_blank" rel="noopener">GitHub</a>.</span></li>
+        <li><time>2026</time><span>MA-IDS is accepted at IEEE SMC 2026 in Bellevue, WA.</span></li>
+        <li><time>2026</time><span>Invited talk at the Florida Poly Engineering and Science Student Research Symposium.</span></li>
+      </ul>
     </div>
   </section>
 
-  <hr class="divider">
-
-  <!-- ── Research Interests ─────────────────────────── -->
-  <section class="block">
-    <h2 class="section-title">Research Interests</h2>
-    <ul class="interest-tags">
-      <li>Network Intrusion Detection Systems</li>
-      <li>LLMs &amp; Retrieval-Augmented Generation</li>
-      <li>IoT Security</li>
-      <li>Agentic AI for Cybersecurity</li>
-      <li>Machine Learning</li>
-      <li>Federated Learning</li>
-      <li>Android Malware Detection</li>
-      <li>Biometrics &amp; Computer Vision</li>
-    </ul>
+  <!-- Research -->
+  <section class="section" id="research">
+    <div class="wrap">
+      <div class="section-head"><h2>Research</h2></div>
+      <div class="themes">
+        <div class="theme">
+          <h3>Intrusion detection that learns from its mistakes</h3>
+          <p>Detectors usually forget why they failed. My thesis keeps that knowledge: agents analyze each error, write it down as a readable rule, and retrieve it for new traffic. I am extending this to small local models and to federated settings where sites share rules instead of data.</p>
+          <p class="theme-work">MA-IDS (SMC 2026), SERA-IDS (under review)</p>
+        </div>
+        <div class="theme">
+          <h3>Language models for security</h3>
+          <p>How far parameter-efficient fine-tuning can take open models on security tasks, compared with full fine-tuning and classical baselines, for Android malware and network traffic.</p>
+          <p class="theme-work">PermissionGuard, LoRA fine-tuning for NIDS</p>
+        </div>
+        <div class="theme">
+          <h3>Computer vision for safety and health</h3>
+          <p>Recognizing human actions and medical structures from video and images: harassment and fall detection, sign language recognition, and brain tumor segmentation.</p>
+          <p class="theme-work">COMPAS 2026, WIECON-ECE 2026, ABC 2024</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <hr class="divider">
-
-  <!-- ── Education ──────────────────────────────────── -->
-  <section class="block">
-    <h2 class="section-title">Education</h2>
-    <ul class="edu-list">
-      <li>
-        <span class="edu-year">2025 –</span>&ensp;
-        <span class="degree">M.S. in Computer Science</span>, Florida Polytechnic University
-        &nbsp;·&nbsp; CGPA: 3.77 / 4.00
-      </li>
-      <li>
-        <span class="edu-year">2020 – 2022</span>&ensp;
-        <span class="degree">M.Sc. in Applied Statistics and Data Science</span>, Jahangirnagar University
-        &nbsp;·&nbsp; CGPA: 3.96 / 4.00
-        <span class="thesis">Thesis: Video-based Bangla Sign Language Recognition using Deep Learning Algorithms</span>
-      </li>
-      <li>
-        <span class="edu-year">2015 – 2020</span>&ensp;
-        <span class="degree">B.Sc. in Computer Science</span>, Manarat International University
-        &nbsp;·&nbsp; CGPA: 3.99 / 4.00
-        <span class="thesis">Thesis: Pose-based Multi-level Features Fusion For Exam Cheat Recognition Using CNN</span>
-      </li>
-    </ul>
+  <!-- Selected work -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section-head"><h2>Selected work</h2><p class="section-aside">Architectures from the papers</p></div>
+      <div class="work-list">
+        <article class="work">
+          <button class="figure-btn" type="button" data-full="img/research/ma-ids.webp" data-caption="MA-IDS dual-phase workflow. Phase 1 (top): the Error Analysis Agent turns misclassifications into rules for the Experience Library. Phase 2 (bottom): rules are retrieved to guide the LLM on new flows.">
+            <span class="plate"><img src="img/research/ma-ids.webp" alt="MA-IDS architecture: a traffic classification agent and an error analysis agent build an experience library offline, then retrieve rules to classify new flows." loading="lazy" decoding="async"></span>
+            <span class="fig-note">Click to enlarge</span>
+          </button>
+          <div>
+            <p class="work-venue">IEEE SMC 2026, M.S. thesis</p>
+            <h3>MA-IDS: a multi-agent RAG framework that learns from its errors</h3>
+            <p>LLMs reading raw network-flow numbers tend to repeat the same mistakes. In MA-IDS, a Traffic Classification Agent labels each flow and an Error Analysis Agent turns every misclassification into a human-readable rule, stored in a FAISS experience library. At test time the library is frozen and the best-matching rules guide the LLM.</p>
+            <p class="result">Macro F1 of <strong>89.75%</strong> on NF-BoT-IoT and <strong>85.22%</strong> on NF-ToN-IoT, compared with 17% and 4.96% for the same model zero-shot.</p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2604.05458" target="_blank" rel="noopener">Paper</a><a href="https://github.com/shamim-cs/MA-IDS" target="_blank" rel="noopener">Code</a></p>
+          </div>
+        </article>
+        <article class="work">
+          <button class="figure-btn" type="button" data-full="img/research/sera-ids.webp" data-caption="SERA-IDS overview. (A) Offline: a small language model analyzes misclassified flows and writes structured rules, admitted through a confidence gate. (B) Online: retrieved rules are condition-matched to the test flow and passed to the decision model.">
+            <span class="plate"><img src="img/research/sera-ids.webp" alt="SERA-IDS architecture: offline construction of structured, confidence-gated rules, and online condition-matched retrieval for a small language model." loading="lazy" decoding="async"></span>
+            <span class="fig-note">Click to enlarge</span>
+          </button>
+          <div>
+            <p class="work-venue">Under review, IEEE ICC 2027</p>
+            <h3>SERA-IDS: structured experience for small, local language models</h3>
+            <p>Free-text rules leave the model to guess the numeric boundaries between attacks. SERA-IDS writes structured rules with explicit feature conditions, class confusions, confidence and provenance, admits them through a confidence gate, and matches their conditions to each new flow before a small model decides.</p>
+            <p class="result">With no fine-tuning and no paid API, three local models (Llama 3.1, Phi-4 14B, Qwen2.5 7B) go from under <strong>12%</strong> macro F1 to between <strong>69.5%</strong> and <strong>87.7%</strong>.</p>
+          </div>
+        </article>
+        <article class="work">
+          <button class="figure-btn" type="button" data-full="img/research/bat-sam.webp" data-caption="BaT-SAM overview. (a) Conv-LoRA adapters inserted into the frozen SAM ViT-H encoder. (b) A sparsely gated mixture of multi-scale convolutional experts. (c) A self-prompting box regressor that predicts the tumor box from image embeddings.">
+            <span class="plate"><img src="img/research/bat-sam.webp" alt="BaT-SAM architecture: Conv-LoRA adapters with a sparsely gated mixture of convolutional experts inside a frozen SAM encoder, plus a self-prompting box regressor." loading="lazy" decoding="async"></span>
+            <span class="fig-note">Click to enlarge</span>
+          </button>
+          <div>
+            <p class="work-venue">IEEE WIECON-ECE 2026</p>
+            <h3>BaT-SAM: automatic brain tumor segmentation with SAM</h3>
+            <p>The Segment Anything Model needs a user prompt and lacks the local bias that MRI segmentation benefits from. BaT-SAM adds Conv-LoRA adapters with a mixture of convolutional experts to the frozen encoder, training under 1% of the parameters, and a self-prompting box regressor so no prompt is needed.</p>
+            <p class="result">Weighted mean IoU of <strong>0.832</strong> on BRISC2025, and Dice of <strong>0.784</strong> on LGG MRI and <strong>0.702</strong> on Figshare without retraining.</p>
+          </div>
+        </article>
+        <article class="work">
+          <button class="figure-btn" type="button" data-full="img/research/video-pipeline.webp" data-caption="Data preparation and model initialization pipeline: uniform frame sampling, spatial standardization and augmentation, then fine-tuning VideoMAE (16 frames), ViViT (32 frames) or TimeSformer (8 frames) pretrained on Kinetics-400.">
+            <span class="plate"><img src="img/research/video-pipeline.webp" alt="Pipeline for video-based harassment detection: frame sampling, spatial standardization and augmentation, then VideoMAE, ViViT or TimeSformer initialized from Kinetics-400, ending in a harassment or non-harassment decision." loading="lazy" decoding="async"></span>
+            <span class="fig-note">Click to enlarge</span>
+          </button>
+          <div>
+            <p class="work-venue">IEEE COMPAS 2026, co-first author</p>
+            <h3>Fine-tuned video transformers for harassment detection</h3>
+            <p>Few labeled videos exist for detecting sexual harassment, and clothing, lighting, occlusion and camera angle all vary. We doubled the SHV dataset to 600 clips, including everyday contact that looks similar but is not harassment, and fine-tuned three video transformers pretrained on Kinetics-400.</p>
+            <p class="result">TimeSformer reached <strong>92.27%</strong> test accuracy, ahead of VideoMAE (91.71%) and ViViT (91.16%).</p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2610.15354" target="_blank" rel="noopener">Paper</a><a href="https://github.com/shamim-cs/Video-Harassment-Detection" target="_blank" rel="noopener">Code</a></p>
+          </div>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <hr class="divider">
-
-  <!-- ── Publications ───────────────────────────────── -->
-  <section class="block">
-    <h2 class="section-title">Publications</h2>
-    <p class="pub-stats">
-      Total Citations: 98 &nbsp;·&nbsp; h-index: 4 &nbsp;·&nbsp; i10-index: 2 &nbsp;·&nbsp;
-      <a href="https://scholar.google.com/citations?hl=en&authuser=2&user=7qdN4ZYAAAAJ" target="_blank">Google Scholar profile</a>
-    </p>
-    <ul class="pub-list">
-
-      <!-- Peer-reviewed -->
-      <li class="pub-item">
-        <span class="pub-num">1.</span>
-        <strong>M. S. Islam</strong>, L. G. Jaimes, and A. S. Dina, "MA-IDS: Multi-agent RAG framework
-        for IoT network intrusion detection with an experience library,"
-        <span class="pub-venue">Proceedings of the 2026 IEEE International Conference on Systems, Man,
-        and Cybernetics (SMC), Bellevue, WA, USA, 2026.</span>
-        <span class="pub-badge badge-accepted">Accepted</span>
-        &nbsp;<a href="https://arxiv.org/abs/2604.05458" class="pub-doi" target="_blank">arXiv ↗</a>
-      </li>
-
-      <li class="pub-item">
-        <span class="pub-num">2.</span>
-        <strong>M. S. Islam</strong>, A. J. M. A. Joha, N. Hossain, M. M. Hasan, and S. Abdullah,
-        "Multi-view Bangla sign language recognition: A new word-level video dataset,"
-        <span class="pub-venue">IEEE International Conference on Activity and Behavior Computing (ABC),
-        Kyushu, Japan, 2024.</span>
-        &nbsp;<a href="https://doi.org/10.1109/ABC61795.2024.10652018" class="pub-doi" target="_blank">DOI ↗</a>
-      </li>
-
-      <li class="pub-item">
-        <span class="pub-num">3.</span>
-        <strong>M. S. Islam</strong> and I. Elwarfalli, "Deep learning-powered ECG-based biometric
-        authentication,"
-        <span class="pub-venue">IEEE NCIM, Dhaka, Bangladesh, 2023.</span>
-        &nbsp;<a href="https://doi.org/10.1109/NCIM59001.2023.10212845" class="pub-doi" target="_blank">DOI ↗</a>
-      </li>
-
-      <li class="pub-item">
-        <span class="pub-num">4.</span>
-        N. H. M. Arafat, S. Ileas, Mujazid, and <strong>M. S. Islam</strong>, "Blosecr: A conceptual
-        framework of identity documents' security on blockchain in refugee issues,"
-        <span class="pub-venue">IEEE CONIT, Karnataka, India, 2022.</span>
-        &nbsp;<a href="https://doi.org/10.1109/CONIT55038.2022.9847731" class="pub-doi" target="_blank">DOI ↗</a>
-      </li>
-
-      <li class="pub-item">
-        <span class="pub-num">5.</span>
-        <strong>M. S. Islam</strong>, M. M. Hasan, and S. Abdullah, "A deep spatio-temporal network
-        for vision-based sexual harassment detection,"
-        <span class="pub-venue">IEEE ETCCE, 2021.</span>
-        &nbsp;<a href="https://doi.org/10.1109/ETCCE54784.2021.9689891" class="pub-doi" target="_blank">DOI ↗</a>
-      </li>
-
-      <li class="pub-item">
-        <span class="pub-num">6.</span>
-        M. M. Hasan, <strong>M. S. Islam</strong>, and S. Abdullah, "Robust pose-based human fall
-        detection using recurrent neural network,"
-        <span class="pub-venue">IEEE RAAICON, Dhaka, Bangladesh, 2019.</span>
-        &nbsp;<a href="https://doi.org/10.1109/RAAICON48939.2019.23" class="pub-doi" target="_blank">DOI ↗</a>
-      </li>
-
-      <!-- Under review / in prep -->
-      <li class="pub-item">
-        <span class="pub-num">7.</span>
-        J. Al-Mahmud, <strong>M. S. Islam</strong>, and A. A. Jui, "Video-based sexual harassment
-        detection using fine-tuned video transformers,"
-        <span class="pub-venue">Accepted to 2026 IEEE International Conference on Systems, Man,
-        and Cybernetics (SMC), 2026.</span>
-        <span class="pub-badge badge-accepted">Accepted</span>
-      </li>
-
-      <li class="pub-item">
-        <span class="pub-num">8.</span>
-        <strong>M. S. Islam</strong>, A. H. Sohag, and Z. Subah, "PermissionGuard: Fine-tuned LLMs
-        and BERT for Android permission-based malware detection,"
-        <span class="pub-venue">Manuscript in preparation, 2025.</span>
-        <span class="pub-badge badge-prep">In Prep</span>
-      </li>
-
-    </ul>
-    <a href="publications.html" class="see-all">See full list &amp; datasets →</a>
+  <!-- Publications -->
+  <section class="section" id="publications">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Publications</h2>
+        <p class="metrics"><strong>8</strong> peer-reviewed papers, <strong>105</strong> citations, h-index <strong>4</strong>, <a href="publications.html">full list and datasets</a></p>
+      </div>
+      <ol class="pubs">
+        <li class="pub">
+          <div class="venue">COMPAS 2026<span>IEEE</span></div>
+          <div>
+            <p class="pub-title">Video-based sexual harassment detection using fine-tuned video transformers</p>
+            <p class="pub-authors">J. Al-Mahmud*, <b>M. S. Islam*</b>, M. N. Hossain <span class="tag">Co-first author</span></p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2610.15354" target="_blank" rel="noopener">arXiv</a><a href="https://github.com/shamim-cs/Video-Harassment-Detection" target="_blank" rel="noopener">Code</a></p>
+          </div>
+        </li>
+        <li class="pub">
+          <div class="venue">SMC 2026<span>IEEE</span></div>
+          <div>
+            <p class="pub-title">MA-IDS: Multi-agent RAG framework for IoT network intrusion detection with an experience library</p>
+            <p class="pub-authors"><b>M. S. Islam</b>, L. G. Jaimes, A. S. Dina</p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2604.05458" target="_blank" rel="noopener">arXiv</a><a href="https://github.com/shamim-cs/MA-IDS" target="_blank" rel="noopener">Code</a></p>
+          </div>
+        </li>
+        <li class="pub">
+          <div class="venue">WIECON-ECE 2026<span>IEEE</span></div>
+          <div>
+            <p class="pub-title">BaT-SAM: Introducing inductive bias into SAM via a mixture of convolutional experts for brain tumor segmentation</p>
+            <p class="pub-authors">S. Jannat, M. M. Hasan, <b>M. S. Islam</b>, M. N. Hossain</p>
+          </div>
+        </li>
+        <li class="pub">
+          <div class="venue">ABC 2024<span>IEEE</span></div>
+          <div>
+            <p class="pub-title">Multi-view Bangla sign language recognition: A new word-level video dataset</p>
+            <p class="pub-authors"><b>M. S. Islam</b>, A. J. M. A. Joha, N. Hossain, M. M. Hasan, S. Abdullah</p>
+            <p class="pub-links"><a href="https://doi.org/10.1109/ABC61795.2024.10652018" target="_blank" rel="noopener">DOI</a></p>
+          </div>
+        </li>
+        <li class="pub">
+          <div class="venue">NCIM 2023<span>IEEE</span></div>
+          <div>
+            <p class="pub-title">Deep learning-powered ECG-based biometric authentication</p>
+            <p class="pub-authors"><b>M. S. Islam</b>, I. Elwarfalli</p>
+            <p class="pub-links"><a href="https://doi.org/10.1109/NCIM59001.2023.10212845" target="_blank" rel="noopener">DOI</a></p>
+          </div>
+        </li>
+        <li class="pub">
+          <div class="venue">CONIT 2022<span>IEEE</span></div>
+          <div>
+            <p class="pub-title">BloSecR: A conceptual framework of identity documents' security on blockchain in refugee issues and conserving fundamental rights</p>
+            <p class="pub-authors">N. H. M. Arafat, S. Ileas, Mujazid, <b>M. S. Islam</b></p>
+            <p class="pub-links"><a href="https://doi.org/10.1109/CONIT55038.2022.9847731" target="_blank" rel="noopener">DOI</a></p>
+          </div>
+        </li>
+        <li class="pub">
+          <div class="venue">ETCCE 2021<span>IEEE</span></div>
+          <div>
+            <p class="pub-title">A deep spatio-temporal network for vision-based sexual harassment detection</p>
+            <p class="pub-authors"><b>M. S. Islam</b>, M. M. Hasan, S. Abdullah</p>
+            <p class="pub-links"><a href="https://doi.org/10.1109/ETCCE54784.2021.9689891" target="_blank" rel="noopener">DOI</a></p>
+          </div>
+        </li>
+        <li class="pub">
+          <div class="venue">RAAICON 2019<span>IEEE</span></div>
+          <div>
+            <p class="pub-title">Robust pose-based human fall detection using recurrent neural network</p>
+            <p class="pub-authors">M. M. Hasan, <b>M. S. Islam</b>, S. Abdullah</p>
+            <p class="pub-links"><a href="https://doi.org/10.1109/RAAICON48939.2019.23" target="_blank" rel="noopener">DOI</a></p>
+          </div>
+        </li>
+      </ol>
+      <p class="metrics" style="margin-top:1.25rem">* Equal contribution. Under review: SERA-IDS (IEEE ICC 2027). In preparation: PermissionGuard.</p>
+    </div>
   </section>
 
-  <hr class="divider">
-
-  <!-- ── Research Projects ───────────────────────────── -->
-  <section class="block" id="projects">
-    <h2 class="section-title">Research Projects</h2>
-    <ul class="project-list">
-
-      <li class="project-item">
-        <div class="project-header">
-          <span class="project-name">MA-IDS: Multi-Agent RAG Framework for IoT Intrusion Detection</span>
-          <span class="project-years">2025 – Present &nbsp;·&nbsp; Thesis</span>
-        </div>
-        <p class="project-desc">
-          Multi-agent IDS integrating GPT-4o with a FAISS-based RAG experience library, featuring a
-          Traffic Classification Agent and an Error Analysis Agent for dynamic rule generation.
-          Accepted at IEEE SMC 2026. Advisors: Dr. Ayesha S. Dina, Dr. Luis G. Jaimes.
-        </p>
-      </li>
-
-      <li class="project-item">
-        <div class="project-header">
-          <span class="project-name">Video-Based Sexual Harassment Detection Using Fine-Tuned Video Transformers</span>
-          <span class="project-years">2025 – Present</span>
-        </div>
-        <p class="project-desc">
-          Extended the SHVD dataset to 600 annotated clips across indoor and outdoor environments.
-          Fine-tuned VideoMAE, ViViT, and TimeSformer for binary classification; TimeSformer achieved
-          92.27% test accuracy, outperforming the CNN-LSTM baseline. Accepted at IEEE SMC 2026.
-        </p>
-      </li>
-
-      <li class="project-item">
-        <div class="project-header">
-          <span class="project-name">PermissionGuard: Fine-Tuned LLMs &amp; BERT for Android Malware Detection</span>
-          <span class="project-years">2026 – Present</span>
-        </div>
-        <p class="project-desc">
-          Compared LoRA fine-tuning of LLaMA 3.1-8B and full fine-tuning of BERT-base against classical
-          ML baselines for Android permission-based malware detection. Manuscript in preparation.
-        </p>
-      </li>
-
-      <li class="project-item">
-        <div class="project-header">
-          <span class="project-name">AI Career Counselor &amp; Guidance Platform</span>
-          <span class="project-years">2024 – 2025</span>
-        </div>
-        <p class="project-desc">
-          LLaMA-powered platform providing personalized IT career roadmaps and labor market insights,
-          trained on an 8,000-point dataset curated from leading educational and job platforms.
-        </p>
-      </li>
-
-      <li class="project-item">
-        <div class="project-header">
-          <span class="project-name">Real-time Bangla Sign Language Translation System</span>
-          <span class="project-years">2022 – 2023</span>
-        </div>
-        <p class="project-desc">
-          Transformer architecture for pose-based Bangla sign language video-to-sentence translation.
-          Winner of the national-level "AI for Bangla Competition 2.0" (100+ teams).
-        </p>
-      </li>
-
-      <li class="project-item">
-        <div class="project-header">
-          <span class="project-name">Detection of Phishing URLs for Secure Browsing</span>
-          <span class="project-years">2024</span>
-        </div>
-        <p class="project-desc">
-          ML system to detect fraudulent URLs using Logistic Regression, Random Forest, SVMs, and
-          Neural Networks with advanced feature selection.
-        </p>
-      </li>
-
-      <li class="project-item">
-        <div class="project-header">
-          <span class="project-name">Bangla Social Network Post Analysis using Deep Learning</span>
-          <span class="project-years">2022</span>
-        </div>
-        <p class="project-desc">
-          Transformer-based language model to classify political sentiment and toxicity in real-time
-          Bangla social media posts.
-        </p>
-      </li>
-
-      <li class="project-item">
-        <div class="project-header">
-          <span class="project-name">Automatic License Plate Recognition (ALPR)</span>
-          <span class="project-years">2018 – 2019</span>
-        </div>
-        <p class="project-desc">
-          Real-time ALPR system trained on a Bangladeshi license plate dataset.
-          Published and presented at IEEE RAAICON 2019.
-        </p>
-      </li>
-
-    </ul>
+  <!-- Other projects -->
+  <section class="section" id="other-projects">
+    <div class="wrap">
+      <div class="section-head"><h2>Other projects</h2></div>
+      <ul class="rows">
+        <li><span class="yr">2026</span><span><b>Parameter-efficient fine-tuning of LLMs for intrusion detection.</b> <span class="sub">Course project for CAP5610 Machine Learning and Practice. QLoRA fine-tuning of LLaMA 3.1 8B compared with BERT, deep learning and classical baselines on NF-UNSW-NB15-v3. <a href="https://github.com/shamim-cs/LoRA-NIDS" target="_blank" rel="noopener">Code</a></span></span></li>
+        <li><span class="yr">2026 to now</span><span><b>PermissionGuard: LLM-based Android malware detection.</b> <span class="sub">LoRA-tuned LLaMA 3.1-8B and BERT against classical models for permission-based detection, up to 97.00% accuracy.</span></span></li>
+        <li><span class="yr">2024 to 2025</span><span><b>AI career counselor.</b> <span class="sub">LLaMA-powered platform for personalized IT career recommendations, built on 8,000 samples.</span></span></li>
+        <li><span class="yr">2024</span><span><b>Phishing URL detection.</b> <span class="sub">Logistic Regression, Random Forest, SVM and neural network models for fraudulent URL detection.</span></span></li>
+        <li><span class="yr">2022 to 2023</span><span><b>Real-time Bangla sign language translation.</b> <span class="sub">Transformer that turns pose-based sign videos into sentences. Winner of AI for Bangla 2.0.</span></span></li>
+        <li><span class="yr">2022</span><span><b>Bangla social media post analysis.</b> <span class="sub">Transformer model for political sentiment and toxicity in Bangla posts.</span></span></li>
+        <li><span class="yr">2018 to 2019</span><span><b>Automatic license plate recognition.</b> <span class="sub">Real-time system on a custom Bangladeshi license plate dataset, published at IEEE RAAICON 2019.</span></span></li>
+      </ul>
+    </div>
   </section>
 
-  <hr class="divider">
+  <!-- Experience and education -->
+  <section class="section" id="experience">
+    <div class="wrap cols-2">
+      <div class="group">
+        <h3>Experience</h3>
+        <ul class="rows">
+          <li><span class="yr">2025 to now</span><span><b>Graduate Assistant, Florida Polytechnic University</b><span class="sub">Research Assistant since Spring 2026, Teaching Assistant in Fall 2025</span></span></li>
+          <li><span class="yr">2024 to 2025</span><span><b>Lecturer, CSE, Manarat International University</b></span></li>
+          <li><span class="yr">2023 to 2024</span><span><b>Lecturer, CSE, Asian University of Bangladesh</b><span class="sub">Convener, AUB Programming Club</span></span></li>
+          <li><span class="yr">2020 to 2022</span><span><b>Adjunct Faculty, CSE, Manarat International University</b></span></li>
+        </ul>
+        <p class="metrics" style="margin-top:.9rem">Taught Artificial Intelligence, Machine Learning, Neural Networks, Object-Oriented Programming and Software Engineering.</p>
+      </div>
+      <div class="group">
+        <h3>Education</h3>
+        <ul class="rows">
+          <li><span class="yr">2025 to 2027</span><span><b>M.S. in Computer Science, Florida Polytechnic University</b><span class="sub">CGPA 3.77/4.00. Thesis on experience-augmented LLM/SLM frameworks for intrusion detection.</span></span></li>
+          <li><span class="yr">2020 to 2022</span><span><b>M.Sc. in Applied Statistics and Data Science, Jahangirnagar University</b><span class="sub">CGPA 3.96/4.00, ranked 1st in batch. Thesis: Efficient Deep Learning Methods for Continuous Bangla Sign Language Recognition.</span></span></li>
+          <li><span class="yr">2015 to 2020</span><span><b>B.Sc. in Computer Science and Engineering, Manarat International University</b><span class="sub">CGPA 3.99/4.00, ranked 1st in batch. Thesis: Pose-based Multi-level Features Fusion for Exam Cheat Recognition Using CNN.</span></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <!-- ── Talks & Presentations ──────────────────────── -->
-  <section class="block">
-    <h2 class="section-title">Talks &amp; Presentations</h2>
-    <ul class="talk-list">
-
-      <li class="talk-item">
-        <span class="talk-year">2026</span>
-        <div class="talk-body">
-          <strong>Invited Speaker</strong> — Engineering and Science Student Research Symposium,
-          Florida Polytechnic University, Lakeland, FL.
-          <span class="talk-title">"Adaptive Reasoning for Network Traffic Security: A Multi-Agent RAG
-          Architecture with Persistent Knowledge Induction."</span>
-        </div>
-      </li>
-
-      <li class="talk-item">
-        <span class="talk-year">2026</span>
-        <div class="talk-body">
-          <strong>Poster Presentation</strong> — Florida Polytechnic University, Lakeland, FL.
-          <span class="talk-title">"MA-IDS: Multi-Agent RAG Framework for IoT Network Intrusion Detection
-          with an Experience Library."</span>
-        </div>
-      </li>
-
-      <li class="talk-item">
-        <span class="talk-year">2022</span>
-        <div class="talk-body">
-          <strong>Invited Speaker</strong> — Webinar on A Publication Road Map for Scientific Papers,
-          MIU CSE Club, Manarat International University.
-        </div>
-      </li>
-
-    </ul>
+  <!-- Awards, talks, service -->
+  <section class="section" id="more">
+    <div class="wrap cols-3">
+      <div class="group">
+        <h3>Awards</h3>
+        <ul class="rows">
+          <li><span><b>Winner, AI for Bangla 2.0</b><span class="sub">2023. National competition run by the Government of Bangladesh, 100+ teams.</span></span></li>
+          <li><span><b>IsDB Masters Scholarship</b><span class="sub">2020. Islamic Development Bank.</span></span></li>
+          <li><span><b>University Merit Scholarship</b><span class="sub">2018. Full tuition waiver, top 1% at Manarat International University.</span></span></li>
+        </ul>
+      </div>
+      <div class="group">
+        <h3>Talks</h3>
+        <ul class="rows">
+          <li><span><b>Adaptive reasoning for network traffic security</b><span class="sub">2026. Invited talk, Engineering and Science Student Research Symposium, Florida Poly.</span></span></li>
+          <li><span><b>MA-IDS poster</b><span class="sub">2026. Florida Polytechnic University.</span></span></li>
+          <li><span><b>A publication road map for scientific papers</b><span class="sub">2022. Invited webinar, MIU CSE Club.</span></span></li>
+        </ul>
+      </div>
+      <div class="group">
+        <h3>Service</h3>
+        <ul class="rows">
+          <li><span><b>Vice President, Muslim Students Association</b><span class="sub">2026. Florida Polytechnic University.</span></span></li>
+          <li><span><b>Research and Workshop Coordinator, AIRVRC</b><span class="sub">2026. AI, Robotics, and Vision Research Club, Florida Poly.</span></span></li>
+          <li><span><b>Co-founder, Hasimukh (Smile)</b><span class="sub">2017. Welfare organization supporting underprivileged communities in Bangladesh.</span></span></li>
+          <li><span><b>President, MIU CSE Club</b><span class="sub">2019 to 2020. Organized CSE Fest 2020 and programming contests.</span></span></li>
+        </ul>
+      </div>
+    </div>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  &copy; Md Shamimul Islam 2026 &nbsp;|&nbsp;
-  <a href="https://scholar.google.com/citations?hl=en&authuser=2&user=7qdN4ZYAAAAJ" target="_blank">Google Scholar</a>
-  &nbsp;|&nbsp;
-  <a href="https://github.com/Shamim-38" target="_blank">GitHub</a>
+<footer class="footer">
+  <div class="wrap">
+    <span>&copy; 2026 Md Shamimul Islam, <a href="mailto:mislam3051@floridapoly.edu">mislam3051@floridapoly.edu</a></span>
+    <nav aria-label="Profiles">
+      <a href="https://scholar.google.com/citations?user=7qdN4ZYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://github.com/shamim-cs" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/shamim435" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://orcid.org/0009-0000-1848-1760" target="_blank" rel="noopener">ORCID</a>
+    </nav>
+  </div>
 </footer>
 
-<script>
-  (function () {
-    var html = document.documentElement;
-    var btn  = document.getElementById('themeToggle');
-    function setTheme(dark) {
-      if (dark) { html.setAttribute('data-theme', 'dark'); btn.textContent = '☀️'; }
-      else       { html.removeAttribute('data-theme');      btn.textContent = '🌙'; }
-      try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch(e) {}
-    }
-    var saved; try { saved = localStorage.getItem('theme'); } catch(e) {}
-    setTheme(saved === 'dark');
-    btn.addEventListener('click', function () {
-      setTheme(html.getAttribute('data-theme') !== 'dark');
-    });
-  })();
-</script>
 
+<dialog class="viewer" id="viewer" aria-label="Figure">
+  <div class="viewer-inner">
+    <img id="viewerImg" src="" alt="">
+    <div class="viewer-bar">
+      <p class="viewer-cap" id="viewerCap"></p>
+      <button class="viewer-close" id="viewerClose" type="button">Close</button>
+    </div>
+  </div>
+</dialog>
+<script src="site.js"></script>
 </body>
 </html>
